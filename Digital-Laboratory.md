@@ -1,8 +1,3 @@
-<css>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default" >
-</script>
-</css>
-
 # Digital Laboratory
 
 
@@ -14,7 +9,7 @@ The 74HC ICs will tolerate a power supply between 2 V and 6 V however 3.3 V and 
 
 Using a pair of MOSFETS we can create an inverter using the following circuit:
 
-![](CMOS.png)
+![](CMOS.svg)
 
 > **ATTENTION:** Be sure to connect the source (S) of the  ZVP3306A to the positive rail and the drain (D) to the drain of the ZVN3306A. Connect the input of the completed inverter to the output of the timer to obtain a clock with duty cycle between 10 and 20%. Verify by examination of the output with an oscilloscope.
 
