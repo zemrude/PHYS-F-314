@@ -3,18 +3,25 @@
 
 # Digital Laboratory
 
-*PHYS-F-314
-G. de Lentdecker, J. A. Aguilar
-ULB Service de Physique des particules élémentaries*
+<small>
+PHYS-F-314<br>
+G. de Lentdecker, J. A. Aguilar<br>
+ULB Service de Physique des particules élémentaries
+</small>
 
-`K. Hason 2010, inital version`
-`J. A. Aguilar 2017, revision`
 
----
+<small><small>K. Hason 2010, inital version J. A. Aguilar 2017, revision </small></small>
+
 
 ### Introduction
 
 The 74HC ICs will tolerate a power supply between 2 V and 6 V however 3.3 V and 5 V are common choices for real circuits today. We will use 5 V through this laboratory. The laboratory power supplies are variable up to 30 V. We will use a linear 3‐terminal regulator, the 7805, which will produce 5 V output for an input of approximately 7 V or higher (it has a “dropout” voltage of 1.7 V as specified in the [datasheet](https://www.sparkfun.com/datasheets/Components/LM7805.pdf)).
+
+### 555 Timer Setup
+
+You are going to need to make your own clock circuit to drive the sequential logic in the following portion of this laboratory. The Intersil ICM7555 will be the basis of your clock. Consult the datasheets for information on how to connect the external components to make a clock. You should use the “astable” alternate configuration with two external resistors and one external capacitor which produces a clock with a programmable duty cycle between 50 and 100%. Choose values of the resistance and capacitance to allow a clock with a frequency between 10 and 20 kHz and a duty cycle between 80 and 90%. Measure the clock with an oscilloscope and verify the frequency and duty cycle.
+
+![](555.svg)
 
 ### CMOS Inverter
 
@@ -33,11 +40,7 @@ Implement the 2‐bit adder shown below. Use the 4-way DIP switches to encode th
 
 > **ATTENTION:** when using the multiple‐gate ’00 and ’02 be sure to connect either to ground or to Vcc all unused inputs -otherwise you will observe very strange behavior. Using the DIP switch step through all possible combinations of two‐bit inputs (16 combinations in total) and verify that the circuit adds the numbers correctly.
 
-### 555 Timer Setup
 
-You are going to need to make your own clock circuit to drive the sequential logic in the following portion of this laboratory. The Intersil ICM7555 will be the basis of your clock. Consult the datasheets for information on how to connect the external components to make a clock. You should use the “astable” alternate configuration with two external resistors and one external capacitor which produces a clock with a programmable duty cycle between 50 and 100%. Choose values of the resistance and capacitance to allow a clock with a frequency between 10 and 20 kHz and a duty cycle between 80 and 90%. Measure the clock with an oscilloscope and verify the frequency and duty cycle.
-
-![](555.svg)
 
 ### SR Flip-Flop (Debouncer)
 
