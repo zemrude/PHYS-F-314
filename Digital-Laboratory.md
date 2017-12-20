@@ -1,5 +1,5 @@
 
-![](https://www.ulb.ac.be/dre/com/img/logo3lp-illu.jpg)
+![](https://www.ulb.ac.be/dre/com/docs/ULB-ligne-gauche.jpg)
 
 # Digital Laboratory
 
@@ -10,7 +10,7 @@ ULB Service de Physique des particules élémentaries
 </small>
 
 
-<small><small>K. Hason 2010, inital version J. A. Aguilar 2017, revision </small></small>
+<small><small>K. Hanson 2010, inital version J. A. Aguilar 2017, revision </small></small>
 
 
 ### Introduction
@@ -36,7 +36,7 @@ Using a pair of MOSFETS we can create an inverter using the following circuit:
 Implement the 2‐bit adder shown below. Use the 4-way DIP switches to encode the two 2-bit numbers. Use LEDs (with at least 100$\Omega$ in series to ground!) to indicate the 3-bit output (2-bit sum plus carry). You will need one [74HC86](https://assets.nexperia.com/documents/data-sheet/74HC_HCT86.pdf), one [74HC00](https://assets.nexperia.com/documents/data-sheet/74HC_HCT00.pdf), one [74HC02](https://assets.nexperia.com/documents/data-sheet/74HC_HCT02.pdf) and one [74HC04](https://datasheet.lcsc.com/szlcsc/74HC04D_C5590.pdf) to implement the gates (AND and OR are formed from NAND and NOR with an inverter)
 
 
-![](adder.svg)
+![](adder.png)
 
 > **ATTENTION:** when using the multiple‐gate ’00 and ’02 be sure to connect either to ground or to Vcc all unused inputs -otherwise you will observe very strange behavior. Using the DIP switch step through all possible combinations of two‐bit inputs (16 combinations in total) and verify that the circuit adds the numbers correctly.
 
